@@ -59,7 +59,7 @@ function playMidnightChime() {}
 })();
 
 /* ─── SHINCHAN PASSCODE VERIFICATION (4 DIGITS) ─── */
-const TARGET_PASSCODE = "2005"; // 4-digit passcode
+const TARGET_PASSCODE = "1611"; // Jesica's 16/11 birthday code without the slash
 
 const SHINCHAN_GIFS = {
   ask: "assets/shinchan-birthday.png",
@@ -115,7 +115,7 @@ function submitBirthdayDate() {
   }
 
   if (enteredDigits === TARGET_PASSCODE) {
-    // Correct Passcode (2005) - Directly transition to the Surprise Question Screen
+    // Correct Passcode (16/11) - Directly transition to the Surprise Question Screen
     const danceGif = document.getElementById('dance-gif');
     if (danceGif) {
       danceGif.src = DANCE_GIF_URL;
@@ -186,7 +186,7 @@ function resetQuiz() {
   const retryBtn = document.getElementById('retry-btn');
 
   img.src = SHINCHAN_GIFS.ask;
-  txt.textContent = "Enter the 4-digit secret passcode 💖";
+  txt.textContent = "Enter Jesica's secret date code (16/11) 💖";
   keypad.classList.remove('hidden-btn');
   retryBtn.classList.add('hidden-btn');
 }
@@ -467,7 +467,7 @@ function closeGiftModal() {
 const LETTER_SECTIONS = [
   {
     id: 'letter-headline-el',
-    text: "Happy birthday to my favourite\nperson! ❤️"
+    text: "Happy birthday, Jesica!\nYou are my favourite person! ❤️"
   },
   {
     id: 'letter-p1-el',
@@ -479,7 +479,7 @@ const LETTER_SECTIONS = [
   },
   {
     id: 'letter-closing-el',
-    text: "Happy birthday, my love. I love you more than you know. 🫶🏻🎂❤️"
+    text: "Happy birthday, Jesica. You mean more to me than you know. 🫶🏻🎂❤️"
   }
 ];
 
